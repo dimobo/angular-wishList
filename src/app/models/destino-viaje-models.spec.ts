@@ -1,7 +1,7 @@
-import { DestinoViajeModels } from './destino-viaje-models.model';
+import { DestinoViajeModel } from './destino-viaje-model';
 
 describe('DestinoViajeModels', () => {
   it('should create an instance', () => {
-    expect(new DestinoViajeModels()).toBeTruthy();
+    expect(new DestinoViajeModel()).toBeTruthy();
   });
 });

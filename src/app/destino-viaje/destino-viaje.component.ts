@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DestinoViajeModels } from '../models/destino-viaje-models';
+import { DestinoViajeModel } from '../models/destino-viaje-model';
 
 @Component({
   selector: 'app-destino-viaje',
