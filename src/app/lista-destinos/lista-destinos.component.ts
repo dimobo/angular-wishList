@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DestinoViajeModels } from '../models/destino-viaje-models';
 
 @Component({
   selector: 'app-lista-destinos',
