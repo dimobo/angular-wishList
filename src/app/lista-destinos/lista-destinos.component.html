@@ -15,8 +15,18 @@
                 type="text"
                 class="form-control"
                 id="nombre"
-                placeholder="Ingresar
-nombre..."
+                placeholder="Ingresar nombre..."
+                #n
+              />
+            </div>
+            <div class="form-group">
+              <label for="nombre">Descripcion</label>
+              <input
+                type="text"
+                class="form-control"
+                id="descripcion"
+                placeholder="Ingresar descripcion..."
+                #d
               />
             </div>
             <div class="form-group">
@@ -26,9 +36,16 @@ nombre..."
                 class="form-control"
                 id="imagenUrl"
                 placeholder="Ingresar	url..."
+                #u
               />
             </div>
-            <button type="submit" class="btn btn-primary">Guardar!</button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              (click)="guardar(n.value, d.value, u.value)"
+            >
+              Guardar!
+            </button>
           </form>
         </div>
       </div>
@@ -36,6 +53,6 @@ nombre..."
   </div>
   <hr class="mb-5" />
   <div class="row">
-    <app-destino-viaje></app-destino-viaje>
+    <app-destino-viaje *ngFor="let d of destinos" [destino]="d"></app-destino-viaje>
   </div>
 </div>
