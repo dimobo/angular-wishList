@@ -27,5 +27,10 @@ export class ListaDestinosComponent implements OnInit {
     return false;
   }
 
+  elegido(d: DestinoViaje) {
+    this.destinos.forEach(function (x) {x.setSelected(false)})
+    d.setSelected(true);
+  }
+
   ngOnInit(): void {}
 }
