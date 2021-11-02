@@ -11,6 +11,6 @@
       {{ destino.descripcion }}
     </p>
     <a href="#" class="btn-card" (click)="ir()">Ir</a>
-    <span [style.display]="destino.isSelected() ? '' : 'none'">- Preferido -</span>
+    <span *ngIf="destino.isSelected()">- Preferido -</span>
   </div>
 </div>
